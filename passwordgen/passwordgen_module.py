@@ -1,8 +1,13 @@
-def passwordgen():
-    return
+import string
+import random
+
+
+def passwordgen(lenght):
+    return ''.join(random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for i in range(lenght))
 
 
 def main():
+    print(passwordgen(8))
     return
 
 
