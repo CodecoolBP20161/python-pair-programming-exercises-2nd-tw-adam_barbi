@@ -1,13 +1,14 @@
 def fizzbuzz(number):
-    value = ""
+    value = ''
+
     if number % 15 == 0:
-        value = ("FizzBuzz")
-    elif number % 5 == 0:
-        value = ("Buzz")
+        value = ('FizzBuzz')
     elif number % 3 == 0:
-       value = ("Fizz")
+        value = ('Fizz')
+    elif number % 5 == 0:
+        value = ('Buzz')
     else:
-       value = number
+        value = number
     return value
 
 
